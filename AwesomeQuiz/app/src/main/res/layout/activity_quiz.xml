@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#720d5d"
+    android:padding="16dp"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity">
+
+    <TextView
+        android:id="@+id/textview_score"
+        android:textColor="#ffffff"
+        android:text="Score:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:freezesText="true"/>
+
+    <TextView
+        android:textColor="#ffffff"
+        android:id="@+id/textview_questions_count"
+        android:layout_below="@+id/textview_score"
+        android:text="Question :1/x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:freezesText="true"/>
+
+    <TextView
+        android:textColor="#ffffff"
+        android:id="@+id/textview_difficulty"
+        android:layout_below="@+id/textview_questions_count"
+        android:text="Difficulty: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:freezesText="true"/>
+
+    <TextView
+        android:id="@+id/textview_countdown"
+        android:textSize="40sp"
+        android:text="00:30"
+        android:layout_alignParentEnd="true"
+        android:textColor="#ffffff"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:freezesText="true"/>
+
+    <TextView
+        android:id="@+id/textview_questions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radio_group"
+        android:layout_marginBottom="17dp"
+        android:layout_marginLeft="25dp"
+        android:text="Here will be question text\nHere will be question text\nHere will be question text"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:freezesText="true"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <RadioButton
+            android:id="@+id/radiobtn1"
+            android:text="Option1"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:freezesText="true"/>
+        <RadioButton
+            android:id="@+id/radiobtn2"
+            android:textColor="#ffffff"
+            android:text="Option2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:freezesText="true"/>
+        <RadioButton
+            android:id="@+id/radiobtn3"
+            android:text="Option3"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:freezesText="true"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_confirm_next"
+        android:text="CONFIRM"
+        android:background="#ffffff"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/radio_group"
+        android:textColor="#720d5d"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:freezesText="true"/>
+
+</RelativeLayout>
